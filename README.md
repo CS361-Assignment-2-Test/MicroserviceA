@@ -23,7 +23,7 @@ Response output (in output.txt):
 1
 3
 
-# How to implement the microservice:
+# How to implement the microservice and programmatically data:
 Write request to input.txt
 
 with open("input.txt", "w") as f:
