@@ -25,17 +25,17 @@ Response output (in output.txt):
 
 # How to implement the microservice and programmatically data:
 Write request to input.txt
+Call the microservice 
+Read result from output.txt
 
 with open("input.txt", "w") as f:
     f.write("vowels,hello\n")
     f.write("length,world\n")
 
-Call the microservice 
 
 import subprocess
 subprocess.run(["./word_analyzer"])
 
-Read result from output.txt
 
 with open("output.txt", "r") as f:
     results = f.readlines()
