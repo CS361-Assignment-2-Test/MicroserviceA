@@ -40,4 +40,5 @@ Build instructions:
 python main.py
 
 UML Sequence Diagram:
+
 ![image](https://github.com/user-attachments/assets/1b9423ab-ce16-49ff-a939-a1e5d110681a)
