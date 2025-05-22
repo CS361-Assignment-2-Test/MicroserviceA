@@ -24,16 +24,19 @@ Response output (in output.txt):
 3
 
 # How to implement the microservice:
-//Write request to input.txt
+Write request to input.txt
+
 with open("input.txt", "w") as f:
     f.write("vowels,hello\n")
     f.write("length,world\n")
 
-//Call the microservice 
+Call the microservice 
+
 import subprocess
 subprocess.run(["./word_analyzer"])
 
-//Read result from output.txt
+Read result from output.txt
+
 with open("output.txt", "r") as f:
     results = f.readlines()
     print("Results:", [r.strip() for r in results])
