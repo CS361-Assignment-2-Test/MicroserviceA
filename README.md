@@ -46,5 +46,6 @@ python main.py
 
 UML Sequence Diagram:
 
-![image](https://github.com/user-attachments/assets/84937e1e-7335-4242-8f02-13d4f2497f45)
+![image](https://github.com/user-attachments/assets/742bf8ca-1b8f-4381-b83a-685fe596bfbc)
+
 
