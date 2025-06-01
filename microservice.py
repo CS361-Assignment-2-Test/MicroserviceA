@@ -1,3 +1,7 @@
+# microservice.py
+
+from collections import Counter
+
 def analyze_line(command, word):
     word = word.lower()
     if command == "length":
@@ -5,7 +9,6 @@ def analyze_line(command, word):
     elif command == "vowels":
         return str(sum(1 for char in word if char in "aeiou"))
     elif command == "repeats":
-        from collections import Counter
         counts = Counter(word)
         return str(sum(1 for c in counts.values() if c > 1))
     else:
@@ -22,5 +25,5 @@ def process_file(input_path, output_path):
             result = analyze_line(command, word)
             outfile.write(result + "\n")
 
-# Example usage:
-process_file("input.txt", "output.txt")
+if __name__ == "__main__":
+    process_file("input.txt", "output.txt")
